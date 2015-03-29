@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  match "/404" => "errors#error404", via: [ :get, :post, :patch, :delete ]
+  get '/questions', :controller=>'mathquestions', :action=>'questions'
+  resources :mathquestions
+
+  post '/questions', :controller=>'mathquestions', :action=>'mathquestions'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,6 +45,8 @@ Rails.application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
+  
+  # https://young-hollows-9611.herokuapp.com   this is the link to my app 
 
   # Example resource route with concerns:
   #   concern :toggleable do

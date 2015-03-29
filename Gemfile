@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '~> 4.2.0'
-#gem 'devise'
+gem 'devise'
 gem 'sass-rails', '~> 5.0.1'
 gem 'uglifier', '~> 2.5.3'
 gem 'coffee-rails', '~> 4.1.0'
@@ -9,7 +9,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.4.1'
-#gem 'high_voltage'
+gem 'pg'
+gem 'mathquestions'#created custom gem
 group :therubyracer do
   gem 'therubyracer', :platform=>:ruby
 end
